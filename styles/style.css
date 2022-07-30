@@ -1,0 +1,104 @@
+*{
+  padding: 0;
+  margin: 0;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+header{
+  height: 60px;
+  display: flex;
+  background-color: #1d3557;
+  color: white;
+  justify-content: space-between;
+  align-items: center;
+}
+
+main{
+  height: calc(100% - 60px);
+  display: grid;
+  grid-template-columns: repeat(25, 22px);
+  grid-template-rows: repeat(25, 22px);
+  gap: 0;
+  place-content: center;
+  background-color: #22334d;
+}
+
+.grid-cell{
+  width: 20px;
+  height: 20px;
+  border: 1px solid white;
+  margin: 0;
+  padding: 0;
+}
+
+.alive {
+  background-color: #99d98c;
+}
+
+.dead {
+  background-color: #1d3557;
+}
+
+header button {
+  padding: 10px 25px;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  font-weight: bold;
+  border: 1px solid white;
+  transition: .5s;
+}
+
+.start-button {
+  background-color: #1d3557;
+}
+
+.start-button:hover {
+  background-color: #99d98c;
+}
+
+.stop-button {
+  background-color: #1d3557;
+}
+
+.stop-button:hover {
+  background-color: #d81159;
+}
+
+#toggle-game-button {
+  margin-left: 10px;
+}
+
+#refresh-button {
+  background-color: #1d3557;
+  margin-right: 10px;
+}
+
+#refresh-button:hover {
+  background-color: #168aad;
+}
+
+.disabled{
+  cursor: not-allowed;
+}
+
+#edit-button{
+  margin-right: 10px;
+}
+
+.edit-button{
+  background-color: #1d3557;
+}
+
+.editing{
+  background-color: #99d98c;
+}
+
+.edit-button:hover{
+  background-color: #168aad;
+}
